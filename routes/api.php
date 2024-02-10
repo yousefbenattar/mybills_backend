@@ -19,3 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/billinfo','App\Http\Controllers\BillInfoController@index');
+Route::post('/submitinfo','App\Http\Controllers\BillInfoController@submitinfo');
